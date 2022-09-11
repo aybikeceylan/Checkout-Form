@@ -24,7 +24,7 @@
           <div class="info">
             <div class="part1">
               <h3>Contact information</h3>
-              <div class="mail">
+              <div class="box">
                 <label for="email">Email</label><br />
                 <input
                   type="email"
@@ -35,7 +35,7 @@
                 /><br />
                 <i class="fa-solid fa-envelope"></i>
               </div>
-              <div class="Phone">
+              <div class="box">
                 <label for="phone">Phone</label><br />
                 <input
                   type="tel"
@@ -49,7 +49,7 @@
             </div>
             <div class="part2">
               <h3>Shipping adress</h3>
-              <div class="name">
+              <div class="box">
                 <label for="name">Full Name</label><br />
                 <input
                   type="text"
@@ -60,7 +60,7 @@
                 /><br />
                 <i class="fa-solid fa-user"></i>
               </div>
-              <div class="adress">
+              <div class="box">
                 <label for="adress">Address</label><br />
                 <input
                   type="text"
@@ -71,7 +71,7 @@
                 /><br />
                 <i class="fa-solid fa-house"></i>
               </div>
-              <div class="city">
+              <div class="box">
                 <label for="adress">Address</label><br />
                 <input
                   type="text"
@@ -83,7 +83,7 @@
                 <i class="fa-solid fa-city"></i>
               </div>
               <div class="ver">
-                <div class="country">
+                <div class="box">
                   <label for="country">Country</label><br />
                   <select id="country" name="coutry">
                     <option value="Turkey">Turkey</option>
@@ -94,7 +94,7 @@
                   ><br />
                   <i class="fa-solid fa-earth-europe"></i>
                 </div>
-                <div class="postcode">
+                <div class="box">
                   <label for="postcode">Post Code</label><br />
                   <input
                     type="text"
@@ -108,48 +108,58 @@
               </div>
             </div>
           </div>
+          <div class="check">
+            <input type="checkbox" name="reminder" id="user-reminder" />
+            <label for="reminder">See this information next time</label>
+          </div>
           <div class="button">
-            <button class="btn">Continue</button>
+            <button class="btn" type="submit">Continue</button>
           </div>
         </form>
-        <div class="img">
-          <div class="bag">
+        <div class="image">
+          <div class="box2">
             <img src="./photo1.png" alt="bag" />
             <div class="value">
-              <h2 class="text">Vintage Backbag</h2>
-              <p class="price"><strong>$54.99</strong> <span>$94.99</span></p>
-            </div>
-            <div class="quantity">
-              <button>
-                <i class="fas fa-minus" aria-hidden="true"></i>
-              </button>
-              <p>1</p>
-              <button>
-                <i class="fas fa-plus" aria-hidden="true"></i>
-              </button>
+              <div>
+                <h2 class="text">Vintage Backbag</h2>
+                <p class="price"><strong>$54.99</strong> <span>$94.99</span></p>
+              </div>
+              <div class="quantity">
+                <button>
+                  <i class="fas fa-minus" aria-hidden="true"></i>
+                </button>
+                <p>1</p>
+                <button>
+                  <i class="fas fa-plus" aria-hidden="true"></i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="shoe">
+          <div class="box2">
             <img src="./photo2.png" alt="shoe" />
             <div class="value">
-              <h2 class="text">Levi Shoes</h2>
-              <p class="price"><strong>$74.99</strong> <span>$124.99</span></p>
-            </div>
-            <div class="quantity">
-              <button>
-                <i class="fas fa-minus" aria-hidden="true"></i>
-              </button>
-              <p>1</p>
-              <button>
-                <i class="fas fa-plus" aria-hidden="true"></i>
-              </button>
+              <div>
+                <h2 class="text">Levi Shoes</h2>
+                <p class="price">
+                  <strong>$74.99</strong> <span>$124.99</span>
+                </p>
+              </div>
+              <div class="quantity">
+                <button>
+                  <i class="fas fa-minus" aria-hidden="true"></i>
+                </button>
+                <p>1</p>
+                <button>
+                  <i class="fas fa-plus" aria-hidden="true"></i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="ship">
+          <div class="box3 box3__top">
             <p>Shipping</p>
             <p>$19</p>
           </div>
-          <div class="total">
+          <div class="box3">
             <p>Total</p>
             <p>$148.98</p>
           </div>
