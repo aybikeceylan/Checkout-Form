@@ -4,12 +4,9 @@
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
 }
-.container {
+body {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .head {
   text-align: center;
@@ -140,8 +137,9 @@ h2 {
 }
 .quantity p {
   line-height: 24px;
+  color: black;
 }
-.value p {
+.price {
   font-size: 1rem;
   color: #f2994a;
   font-weight: 600;
@@ -159,4 +157,48 @@ span {
 }
 .box3__top {
   margin-top: 50px;
+}
+@media screen and (max-width: 540px) {
+  .head {
+    text-align: center;
+  }
+  .section {
+    display: grid;
+    grid-template-columns: 100vw;
+    width: 100vw;
+    margin: 5rem 1rem;
+    grid-template-rows: 400px 1fr;
+    align-items: center;
+  }
+  form {
+    grid-area: 2/1;
+  }
+
+  .box input {
+    width: 95vw;
+  }
+
+  .image {
+    height: 100vh;
+    width: 93vw;
+
+    grid-area: 1/1;
+  }
+  .ver {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ver .box {
+    margin: 2rem 0 0;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    width: 40%;
+  }
 }
