@@ -158,7 +158,7 @@ span {
 .box3__top {
   margin-top: 50px;
 }
-@media screen and (max-width: 540px) {
+@media only screen and (max-width: 540px) {
   .head {
     text-align: center;
   }
